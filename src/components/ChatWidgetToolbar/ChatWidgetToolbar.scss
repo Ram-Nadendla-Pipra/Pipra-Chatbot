@@ -1,0 +1,16 @@
+.chat-widget-toolbar {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    button {
+        color: #059cdf;
+        font-size: 14px;
+        text-transform: capitalize;
+        background-color: transparent !important;
+    
+    }
+    &_welcomeText {
+        font-weight: bold;
+    }
+}

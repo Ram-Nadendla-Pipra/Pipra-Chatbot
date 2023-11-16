@@ -1,0 +1,78 @@
+.chat-widget-footer {
+    padding: 4px 10px 10px 10px;
+    bottom: 0;
+    background-color: #fff; //height: 130px;
+    &-anything-else-block {
+        background-color: #faeae0;
+        color: #ED7532;
+        border-radius: 6px;
+        margin: 0px auto 20px auto;
+        padding: 4px 0px 4px 0px;
+        font-size: 14px;
+        text-align: center;
+        width: 320px;
+        .Chat-question-cls {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+    }
+    &-text-box {
+        .MuiInputBase-root {
+            border-radius: 30px;
+            min-width: 264px;
+            .send-btn-cls {
+                background-color: grey;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                margin-right: -4px;
+                svg {
+                    font-size: 1.0rem;
+                }
+            }
+            .MuiInputBase-input {
+                font-size: 14px;
+            }
+            fieldset {
+                border: 2px solid #1976d2;
+            }
+        }
+    }
+    &-text-voice-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    &-voice-btn {
+        &.active {
+            //TODO: Add active mic css here
+        }
+        .voicebtn-cls {
+            width: 40px;
+            cursor: pointer;
+        }
+        .voicebtn-listen-cls {
+            width: 55px;
+            margin-right: -6px; //cursor: pointer;
+        }
+    }
+    &_focused {
+        .chat-widget-footer-text-box {
+            .MuiInputBase-root {
+                .send-btn-cls {
+                    background-color: #059cdf;
+                }
+                fieldset {
+                    border-color: #059cdf !important;
+                    border-width: 1px;
+                }
+            }
+        }
+        .chat-widget-footer-anything-else-block {
+            display: none;
+        }
+    }
+}

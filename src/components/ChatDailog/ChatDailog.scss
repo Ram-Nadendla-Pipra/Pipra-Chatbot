@@ -1,0 +1,40 @@
+.chat-widget-dlg {
+    width: min-content;
+    left: 40% !important; //height: fit-content;
+    top: auto !important;
+    .MuiDialog-container {
+        justify-content: end;
+        .MuiPaper-root:first-child {
+            background: transparent;
+            box-shadow: none;
+            padding: 5px;
+            margin: auto 0px;
+            position: relative;
+            .close-widget-card {
+                min-height: 88.5vh;
+            }
+        }
+    }
+    &.small {
+        .MuiDialog-container {
+            .MuiPaper-root:first-child {
+                max-width: 810px;
+            }
+        }
+    }
+    &.medium {
+        .MuiDialog-container {
+            .MuiPaper-root:first-child {
+                max-width: 1210px;
+            }
+        }
+    }
+    .MuiBackdrop-root {
+        background: transparent;
+        overflow: hidden;
+        box-shadow: none;
+    }
+    .chat-dlg-container {
+        display: flex;
+    }
+}

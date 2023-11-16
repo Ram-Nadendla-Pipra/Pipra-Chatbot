@@ -1,0 +1,152 @@
+// .chat-widget-dlg {
+//   .MuiDialog-container .MuiPaper-root:first-child{
+//     // position: fixed;
+//     // right: 10px;
+//     // top: 15%;
+//     background: transparent;
+//     border-radius: 10%;
+//     box-shadow: none;
+//     padding: 5px;
+//     margin: 0px;
+//     max-width: 700px;
+//   }
+//   .MuiBackdrop-root {
+//     background: transparent;
+//     overflow: hidden;
+//     box-shadow: none;
+//   }
+.chat-widget-container {
+    z-index: 1;
+    .MuiCardContent-root {
+        padding: 0px 0px 16px 16px;
+        .voice-listening-cont {
+            img {
+                width: 355px;
+                margin: 140px 0px 0px -21px;
+            }
+        }
+        .welcome-content_options {
+            display: grid;
+            button {
+                border: 1px solid #059cdf;
+                color: #059cdf;
+                margin: 8px 0px !important;
+                padding: 2px 10px;
+                border-radius: 8px;
+                font-size: 13px !important;
+                text-align: left;
+                float: left;
+                display: inline-block;
+                width: fit-content;
+            }
+        }
+        .welcome-content_btn {
+            //  min-width: 154px;
+        }
+        .welcome-content p {
+            color: #333;
+            margin: 10px 0px;
+            font-style: italic;
+            font-size: 14px;
+        }
+    }
+    .MuiPaper-root {
+        background: #fff !important;
+        box-shadow: 0px 0px 5px 1px #999 !important;
+        .MuiCardHeader-action {
+            .header-minimize {
+               transform: rotate(150deg)
+            }
+            .header-close {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    } // .chat-widget-card {
+    //     box-shadow: 0px 0px 5px 1px rgb(194, 194, 194);
+    //     border-radius: 10%;
+    //     height: 520px;
+    // }
+    .chat-widget-card,
+    .close-widget-card {
+        // height: 80vh;
+        box-shadow: 0px 0px 5px 1px rgb(194, 194, 194);
+        border-radius: 10%;
+        max-width: 300px !important;
+        min-width: 300px;
+        max-width: 345px !important;
+        min-width: 345px;
+    }
+    .chat-brena {
+        // position: absolute;
+        // z-index: 9;
+        // background-color: #f1f1f1;
+        // text-align: center;
+        // border: 1px solid #d3d3d3;
+    }
+    .chat-brena-cont {
+        // padding: 10px;
+        // cursor: move;
+        // z-index: 10;
+        // background-color: #2196F3;
+        // color: #fff;
+    }
+    &_title-img-wrapper {
+        text-align: left;
+        margin-top: -36px;
+        padding-left: 12px;
+    }
+    &_title-img {
+        width: 180px;
+    }
+    &_title-img-assistant {
+        width: 270px;
+    }
+    &_body {
+        overflow: auto;
+        height: 60vh;
+        padding-right: 16px;
+        &::-webkit-scrollbar {
+            width: 4px;
+            border: 1px solid #c7c9c8;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0;
+            background-color: #c7c9c8;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 0;
+            background-color: #f2f3f3;
+        }
+    }
+    &_footer {
+        &-anything-else-block {
+            background-color: #f6d1ba;
+            color: #ED7532;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 2px 10px 2px 5px;
+            font-size: 14px;
+        }
+        &-text-box {
+            .MuiInputBase-root {
+                border-radius: 30px;
+            }
+        }
+        &-text-voice-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-voice-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #ED7532 !important;
+        }
+    }
+}
+
+// }
